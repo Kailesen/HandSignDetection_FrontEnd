@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIT | Interpreter</title>
+
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainDiv">
+
+            <nav id="navbar">
+                <ul>
+                    <li><a class="allPages" href="index.html">Home</a></li>
+                    <li><a class="allPages" id="currentPage" href="interpreter.html">Interpreter</a></li>
+                    <li><a class="allPages" href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+            <!-- the webcam and controls -->
+             <canvas id="canvas"></canvas>
+             <div id="controls">
+                  <div id="status">Status: starting...</div>
+                  <div id="predictionBox"> 
+                    <div id="prediction">Prediction: <strong>None</strong></div>
+                  </div>
+            </div>
+
+    </div>
+
+    
+ <!-- script for backend linking -->
+  <!-- MediaPipe JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+  <script src="src/appLink.js"></script>
+
+</body>
+</html>

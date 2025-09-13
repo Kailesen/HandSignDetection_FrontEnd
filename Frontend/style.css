@@ -1,0 +1,154 @@
+html
+{
+    background-size: cover;
+}
+
+
+.mainDiv
+{
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    top: 30px;
+    margin: auto;
+    margin-top: auto;
+    width: 1300px;
+    height: 620px;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(15px);
+    left: 100px;
+}
+
+#navbar{
+    position: relative;
+    top: 25px;
+    left: 20px;
+    width: min-content;
+
+}
+
+#navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.allPages{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 80;
+    font-size: 25px;
+    color: black;
+    opacity: 0.5;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0.5s;    
+}
+
+#currentPage{
+    text-decoration: underline rgba(0, 0, 0, 0.3) 1px;
+    text-underline-offset: 10px;
+}
+
+.allPages:hover{
+    opacity: 0.9;
+    transition: 0.7s;  
+    font-weight: 300;
+    font-variation-settings: "wdth" 65;
+}
+
+
+#mainHeading{
+    /*weight must be from 100 to 900*/
+    margin: 0;
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 130px;
+    position: relative;
+    top: 200px;
+    left: -400px;
+    color: black;
+    opacity: 0.7;
+    height: fit-content;
+}
+
+#mainCathphrase{
+    margin: 0;
+    width: 400px;
+    position: relative;
+    top:360px;
+    left: -600px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+    opacity: 0.7;
+    height: fit-content;
+}
+
+/* webcam */
+    #canvas { 
+        height: 440px; 
+        border-radius:8px;
+        position: relative;
+        left: -450px;
+        top: 115px;
+        
+    }
+    #controls{
+        position: absolute;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    #status { 
+        font-size: 13px;
+        color: #666;
+        position: absolute;
+        font-family: "Lexend", sans-serif;
+        top: 565px;
+        left: 80px;
+    }
+    #predictionBox{
+        position: absolute;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 16px;
+        width: 300px;
+        height: 300px;
+        top: 160px;
+        left: 800px;
+        padding:5px 20px;
+        font-family: "Lexend", sans-serif;
+        
+    }
+    #prediction { 
+        font-size: 20px; 
+        margin-top:12px;
+        position: absolute;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: 200;
+    }
+
+    #prediction strong { 
+        position: relative;
+        color: rgba(0, 0, 0, 0.8);
+        display: block;
+        font-weight: 400;
+        font-size: 60px;
+        top: 5px;
+    }

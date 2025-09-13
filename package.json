@@ -1,0 +1,18 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite Frontend",
+    "build": "vite build Frontend",
+    "preview": "vite preview Frontend"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0",
+    "typescript": "^4.9.3",
+    "vite": "^7.1.5"
+  }
+}
